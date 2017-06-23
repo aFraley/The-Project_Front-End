@@ -1,6 +1,6 @@
-var gulp = require('gulp')
+var gulp = require('gulp');
 
-var BASE_DIR = '/home/alan/Code/misc/django-ember/ember-front/dist/'
+var BASE_DIR = '/home/alan/Code/misc/django-ember/ember-front/dist/';
 
 var paths = {
     base: BASE_DIR + '*',
