@@ -1,1 +1,21 @@
-<h1>Dashboard</h1>
+<div class="container">
+  <h1 class="page-header">Dashboard</h1>
+  <h3>Statistics for #python on Twitter</h3>
+
+  <div class="btn-group" role="group" aria-label="...">
+    <button type="button" class="btn btn-default" onclick={{action 'getPerHour'}}>Tweets Per Hour</button>
+    <button type="button" class="btn btn-default" onclick={{action 'getRetweet'}}>Max Retweet Per Day</button>
+    {{!-- <button type="button" class="btn btn-default">Right</button> --}}
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      {{#if showPerHour}}
+        {{ember-chart type='bar' data=model.tweetPerHour}}
+      {{/if}}
+      {{#if showRetweet}}
+        {{ember-chart type='bar' data=model.maxRetweet}}
+      {{/if}}
+    </div>
+  </div>
+</div>
