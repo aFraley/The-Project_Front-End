@@ -52,7 +52,7 @@ export default Ember.Service.extend({
 
     let arrayLength = tweetPerHour.length;
 
-    for (let i = 0; i < arrayLength; i++) {
+    for (var i = 0; i < arrayLength; i++) {
       let date = new Date(tweetPerHour[i].tweet_hour);
       tweetPerHour[i].tweet_hour = date.toLocaleString();
       chart.labels.push(tweetPerHour[i].tweet_hour);

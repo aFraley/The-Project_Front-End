@@ -25,5 +25,4 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
     return modelData;
 
   }
-
 });
