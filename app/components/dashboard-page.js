@@ -17,6 +17,10 @@ export default Ember.Component.extend({
     getRetweet() {
       this.set('showPerHour', false);
       this.set('showRetweet', true);
+    },
+
+    logout() {
+      this.sendAction('logout');
     }
 
   } // actions
