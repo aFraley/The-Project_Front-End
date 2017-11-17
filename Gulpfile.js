@@ -1,8 +1,8 @@
-var gulp = require('gulp');
+let gulp = require('gulp');
 
-var BASE_DIR = '/home/alan/Code/misc/django-ember/ember-front/dist/';
+let BASE_DIR = '/home/alan/Code/misc/django-ember/ember-front/dist/';
 
-var paths = {
+let paths = {
     base: BASE_DIR + '*',
     assets: BASE_DIR + 'assets/*',
     templatePath: '/home/alan/Code/misc/django-ember/server/frontend/templates/frontend',
@@ -11,7 +11,7 @@ var paths = {
 
 gulp.task('assets', function(){
   console.log('copying assets');
-  var stream = gulp.src(
+  let stream = gulp.src(
     '/home/alan/Code/misc/django-ember/ember-front/dist/assets/*'
   ).pipe(gulp.dest(paths.staticPath));
   return stream;

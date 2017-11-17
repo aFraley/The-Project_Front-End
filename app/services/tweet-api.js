@@ -6,7 +6,7 @@ export default Ember.Service.extend({
     Ember.$.ajax({
         method: 'GET',
         dataType: "json",
-        url: 'http://localhost:8888/api/tweet-per-hour/',
+        url: 'http://localhost:8000/api/tweet-per-hour/',
         async: false,
         success: (res, status) => {
           console.log('Tweet per hour call:', status);
@@ -21,7 +21,7 @@ export default Ember.Service.extend({
     Ember.$.ajax({
         method: 'GET',
         dataType: "json",
-        url: 'http://localhost:8888/api/max-retweet/',
+        url: 'http://localhost:8000/api/max-retweet/',
         async: false,
         success: (res, status) => {
           console.log('Max Retweet per day call:', status);
